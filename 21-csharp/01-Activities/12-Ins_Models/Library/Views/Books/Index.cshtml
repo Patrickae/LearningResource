@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Book>
+
+<br/>
+<ul>
+  @foreach (var item in Model) {
+    <li>@item.BookName</li>
+  }
+</ul>

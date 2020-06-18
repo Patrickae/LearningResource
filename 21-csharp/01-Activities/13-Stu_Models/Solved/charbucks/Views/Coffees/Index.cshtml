@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<Coffee>
+
+<p>Hi, @ViewData["FirstName"] @ViewData["LastName"]! It's great to see you here.</p>
+
+<br/>
+<ul>
+  @foreach (var item in Model) {
+    <li>@item.Origin, @item.Roast</li>
+  }
+</ul>
